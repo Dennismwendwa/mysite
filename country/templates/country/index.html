@@ -1,0 +1,40 @@
+{% extends 'layout/index.html'%}
+
+    {% block content%}
+
+        <div>
+            {% for count in counts %}
+
+            <div>
+                <div class="country_container">
+                    <div class="country_box">
+                        <h2>Name of the country</h2>
+                        <h4>{{ count.name}}</h4>
+                    </div>
+                    <div class="country_popu">
+                        <h2>population </h2>
+                        <h4>{{ count.population}}</h4>
+                    </div>
+                    <div class="country_area">
+                        <h2>Surfice Area </h2>
+                        <h4>{{ count.area}}</h4>
+                    </div>
+                    <div class="country_capi">
+                        <h2>capiatal_city </h2>
+                        <h4>{{ count.capiatal_city}}</h4>
+                    </div>
+                    <div class="country_frag">
+                        <h2>Frag of the country </h2>
+                        <img src="{{ count.image.url }}" width="500" >
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+        </div>
+
+    {% endblock %}
+
+    

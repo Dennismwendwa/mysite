@@ -1,0 +1,73 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>country</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static '/styles/base.css' %}">
+        <link rel="styleshhet" type="text/css" media="screen" href=" ">
+        <script src="https://kit.fontawesome.com/b38b930fce.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                
+            </label>
+            <label class="logo" id="home-logo"><a href="{% url 'city'%}">Africode</a></label>
+            <ul>
+                {% if user.is_authenticated %}
+                <h3 class="link"> Welcome {{ user.first_name }}</h3>
+                <li class="link"><a href="accounts/logout">logout</a></li>
+                {% else %}
+                <li class="active"><a href="{% url 'city'%}">Home</a></li>
+                <li class="link"><a href="{% url 'register'%}">Register</a></li>
+                <li class="link"><a href="{% url 'login'%}">login</a></li>
+                <li class="link"><a href="{% url 'animals'%} ">animals</a></li>
+                <li class="link"><a href="{% url 'people'%} ">people</a></li>
+                <li class="link"><a href="{% url 'country'%} ">country</a></li>
+                {% endif %}
+            </ul>
+            
+        </nav>
+        <section></section>
+     
+        {% block content%}
+        
+
+
+        {% endblock %}
+
+        <footer class="footer">
+            <div class="inner-footer">
+                <div class="social-links">
+                    <ul>
+                        <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="social-items"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="social-items"><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                        <li class="social-items"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="quick-links">
+                    <ul>
+                        <li class="quick-items"><a href="#">Home</a></li>
+                        <li class="quick-items"><a href="#">Tutorials</a></li>
+                        <li class="quick-items"><a href="#">Services</a></li>
+                        <li class="quick-items"><a href="#">About Us</a></li>
+                        <li class="quick-items"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="outer-footer">
+                Made with love by <strong>Africode</strong>. <br>
+                Copyright &#169; Africode Pro. All Rights Reserved.
+            </div>
+        </footer>
+    </body>
+</html>

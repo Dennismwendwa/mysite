@@ -1,0 +1,380 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+.nav-bar{
+    background: rgb(36, 1, 1);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+   float: right; 
+   margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+.logo a{
+    color: white;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background:#1b9bff;
+    transform: .5s;
+}
+a.logo, a:hover{
+    background-color: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+section{
+    background: url('images/nature-bg.jpg')  no-repeat;
+    background: calc(100vh-80px);
+}
+
+
+
+/* body css */
+
+.main-body {
+    background: rgb(158, 25, 211);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.body-flex-box{
+    width: 300px;
+    height: 560px;
+    background: purple;
+    color: white;
+    font-size: 25px;
+    text-align: start;
+    margin: 2px;  
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;  
+}
+
+.destination_img{
+    background: #e91e63;
+}
+
+.destination_img .text-center{
+    background: black;
+    width: fit-content;
+    margin-left: 60px;
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+ /* footer css */
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background: #505050;
+}
+.social-links{
+    display: flex;
+}
+.social-links ul{
+    padding: 20px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+}
+.social-items{
+    list-style: none;
+}
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: #6cccc6;
+    transition: all .25s;
+}
+.social-items a:hover{
+    color: #5db3ad;
+}
+.quick-links{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+    
+    background: green;
+}
+.quick-links ul{
+    display: flex;
+}
+.quick-items{
+    list-style: none;
+    margin-top: 30px;
+}
+.quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px;
+    color: white;
+    transform: all .25s;
+}
+.quick-items a:hover{
+    color: #6cccc6;
+}
+.outer-footer{
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background: #e91e63;
+}
+
+
+.big_five{
+    margin: 10px;
+    display: grid;
+
+}
+
+h1{
+    
+    background: #e91e63;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.p-one{
+    
+    margin-bottom: 20px;
+}
+
+.heading-1{
+    
+    margin-bottom: 10px;
+}
+
+.animal-list{
+    
+    margin-left: 30px;
+}
+
+.big-animals{
+    margin-bottom: 5px;
+}
+
+.lion_box{
+    background: #1b9bff;
+    display: grid;
+}
+
+.lion-h{
+    margin-left: 20px;
+}
+
+.lion-p{
+    margin-left: 20px;
+}
+.lion-img{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+.rhino_box{
+    background: rgba(18, 176, 142, 0.026);
+
+}
+
+.rhino-p{
+    margin-left: 20px;
+    width: 900px;
+}
+
+.rhino-h3{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;   
+}
+
+.rhino-img{
+    margin-left: 700px;
+}
+
+.elephant_box{
+    background: peru;
+}
+
+.elephant-h{
+    margin-left: 20px;
+    margin-bottom: 10ps;
+    margin-top: 10px;
+}
+
+.elephant-p{
+    margin-left: 20px;
+}
+
+.elephant-img{
+    margin-left: 250px;
+}
+
+.buffalo_box{
+    background: brown;
+}
+
+.buffalo-h{
+    
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.buffalo-p{
+    margin-left: 20px;
+}
+
+.buffalo-img{
+    margin-left: 300px;
+}
+
+.leopard_box{
+    background: darkcyan;
+}
+
+.leopard-h{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.leopard-p{
+    margin-left: 20px;
+}
+
+.leopard-img{
+    margin-left: 200px;
+}
+
+/* css for country app */
+
+.country_container{
+    background: darkblue;
+    display: flex;
+}
+
+.country_box{
+    background: #e91e63;
+    width: 15%;
+    margin-bottom: 2px;
+}
+
+.country_popu{
+    background: #24262b;
+    width: 15%;
+    margin-bottom: 2px;  
+}
+
+.country_area{
+    background: #1b9bff;
+    width: 15%;
+    margin-bottom: 2px; 
+}
+
+.country_capi{
+    background: #ffffff;
+    width: 15%;
+    margin-bottom: 2px;
+}
+
+.country_frag{
+    background:peru;
+    width: 40%;
+    margin-bottom: 2px;
+}
+
+/* css for people */
+
+.table{
+    background: #1ee9a2;
+}
+
+.table-row{
+    background: yellow;
+    width: fit-content;
+    height: 100px;
+}
+

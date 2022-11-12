@@ -1,0 +1,69 @@
+    {% extends 'layout/index.html' %}
+    {% load static %}
+
+    {% block content %}
+    <div class="big_five">
+
+        <h1>The Big Five.</h1>
+        <p class="p-one">
+            Did you know <strong>Africa</strong>is the home of the big five. <br> Or wait, what does <strong>the big five</strong>
+            even mean?. The big five, are African animals that early big game hunters considered most difficult and dangerous animals to
+            hunt.
+        </p>
+        <h4 class="heading-1">The following are the Big Five.</h4>
+        <ol class="animal-list">
+            <li class="big-animals">Lion</li>
+            <li class="big-animals">Rhino</li>
+            <li class="big-animals">Elephant</li>
+            <li class="big-animals">Buffalo</li>
+            <li class="big-animals">Leopard</li>
+        </ol>
+
+    </div>
+    <div class="animal_container">
+        <div class="lion_box">
+            <h3 class="lion-h">Lion</h3>
+            <p class="lion-p">The <strong> (Panthera leo)</strong> is a large cat of the genus Panthera native to Africa and India.<br>The lion
+                 inhabits grasslands, savannas and shrublands.
+            <br><a href="https://en.wikipedia.org/wiki/Lion">Read more about lions here.</a> </p>
+            <img class="lion-img" src="{% static 'images/lion.jpg' %}" alt="" height="300" width="400" >
+        </div>
+        <div class="rhino_box">
+            <h3 class="rhino-h3">Rhino</h3>
+            <p class="rhino-p">Did you know? Rhino is the shortform of <strong>rhinoceros</strong>. <br>Rhinoceroses are some of the largest remaining
+                 megafauna:
+                Rhinoceros are killed by poachers for their horns, which are bought and sold on the black market for high prices, leading to most
+                living rhinoceros species being considered endangered. Rhino horns are made of keratin, the same material as hair and fingernails,
+                and there is no good evidence of any health benefits.<br><a href="https://en.wikipedia.org/wiki/Rhinoceros">For more about Rhinos 
+                    read here.</a>     
+            </p>
+            <img class="rhino-img" src="{% static 'images/rhino.jpg'%}" alt="" height="300" width="400" > 
+            
+        </div>
+        <div class="elephant_box">
+            <h3 class="elephat-h">Elephant</h3>
+            <p class="elephant-p">Elephants are the largest existing land animals.<br> Three living species are currently recognised: the <strong>African bush elephant,
+
+            </strong>
+                 the <strong>African forest elephant,</strong> and the <strong>Asian elephant.</strong></p>
+            <img class="elephant-img" src="{% static 'images/elephant.webp' %}" alt="" height="300" width="400" >
+        </div>
+        <div class="buffalo_box">
+            <h3 class="buffalo-h">Buffalo</h3>
+            <p class="buffalo-p">The African buffalo (Syncerus caffer) is a large sub-Saharan African bovine.<br>It is widely regarded as one of the most dangerous animals
+                 on the African continent.<br>The African buffalo is not an ancestor of domestic cattle and is only distantly related to other larger
+                  bovines. </p>
+            <img class="buffalo-img" src="{% static 'images/buffalo.jpg' %}" alt="" height="300" width="400" > 
+        </div>
+        <div class="leopard_box">
+            <h3 class="leopard-h">Leopard</h3>
+            <p class="leopard-p">The <strong>leopard (Panthera pardus)</strong> is one of the five extant species in the genus 
+                <a href="https://en.wikipedia.org/wiki/Panthera"> Panthera,</a> a member of the cat family, Felidae.<br>Compared to other wild
+                 cats, the leopard has relatively short legs and a long body with a large skull. Its fur is marked with rosettes.</p>
+            <img class="leopard-img" src="{% static 'images/leopard.jpg'%}" alt="" height="300" width="400" >
+        </div>
+
+    </div>
+
+
+    {% endblock %}
